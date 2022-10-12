@@ -50,4 +50,14 @@ btnGenera.addEventListener('click', function(){
 
 })
 
+//pulsante del reset
+const btnReset = document.getElementById('btn-annulla');
+
+btnReset.addEventListener('click', function(){
+  document.getElementById('input-nome').value = "";
+  document.getElementById('input-km').value = "";
+  document.getElementById('age').value = "";
+  
+})
+
 //dettagli biglietto
