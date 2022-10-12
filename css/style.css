@@ -1,6 +1,12 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 117, 255);
+}
 
 .container{
-  background-color: lightcyan;
+  background-color: rgba(0, 0, 0, 0.904);
   width: 70%;
   height: 30vh;
   margin: 0 auto;

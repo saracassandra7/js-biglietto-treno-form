@@ -15,7 +15,6 @@ const maxCodice = 50000
 let prezzoTot;
 let sconto;
 
-
 //form del biglietto
 const btnGenera = document.getElementById('btn-genera');
 
@@ -24,7 +23,6 @@ btnGenera.addEventListener('click', function(){
   const kmPercorso = parseInt(prompt('Quanti km devi percorrere per il tuo viaggio?'));
   const etaUtente = parseInt(prompt('Quanti anni hai?'));
   const PrezzoBiglietto = kmPercorso * prezzoAlKm
-  
   
   document.getElementById('input-nome').value = NomeCognome;
   document.getElementById('input-km').value = kmPercorso;
@@ -53,7 +51,6 @@ btnGenera.addEventListener('click', function(){
   document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * (ultimaCarrozza - primaCarrozza) + primaCarrozza);
   document.getElementById('codice').innerHTML = Math.floor(Math.random() * (maxCodice - minCodice) + minCodice);
   document.getElementById('costo-biglietto').innerHTML = `${prezzoTot.toFixed(2)} €`;
-  
 
 })
 
@@ -64,6 +61,11 @@ btnReset.addEventListener('click', function(){
   document.getElementById('input-nome').value = "";
   document.getElementById('input-km').value = "";
   document.getElementById('age').value = "";
+  document.getElementById('nome-passeggero').innerHTML = "";
+  document.getElementById('offerta').innerHTML = "";
+  document.getElementById('carrozza').innerHTML = "";
+  document.getElementById('codice').innerHTML = "";
+  document.getElementById('costo-biglietto').innerHTML = "";
   
 })
 

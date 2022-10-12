@@ -13,7 +13,7 @@
 <body>
 
   <!-- calcola il prezzo del tuo biglietto -->
-  <div class="container">
+  <div class="container mt-5 rounded">
     <div class="container-form">
       <div class="dato">
         <p>Nome e Cognome</p>
@@ -37,40 +37,41 @@
     </div>
     
     <div class="pulsanti">
-      <button id="btn-genera">Genera</button>
-      <button id="btn-annulla">Annulla</button>
+      
+      <button type="button" class="btn btn-outline-info me-2" id="btn-genera">Genera</button>
+      <button type="button" class="btn btn-outline-info" id="btn-annulla">Annulla</button>
     </div>
   </div>
 
   <!-- il tuo biglietto -->
-  <div class="container">
-    <h4>DETTAGLIO PASSEGGERI</h4>
+  <div class="container mt-4 rounded">
+    <h4 class="mb-4">DETTAGLIO PASSEGGERI</h4>
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
-          <h5>NOME PASSEGGERO</h5>
+          <h5 class="mb-4">NOME PASSEGGERO</h5>
           <p id="nome-passeggero">-</p>
         </div>
 
         <div class="col-9">
           <div class="row">
             <div class="col-3">
-              <h6>Offerta</h6>
+              <h6 class="mb-4">Offerta</h6>
               <p id="offerta"></p>
             </div>
 
             <div class="col-3">
-              <h6>Carrozza</h6>
+              <h6 class="mb-4">Carrozza</h6>
               <p id="carrozza"></p>
             </div>
 
             <div class="col-3">
-              <h6>Codice CP</h6>
+              <h6 class="mb-4">Codice CP</h6>
               <p id="codice"></p>
             </div>
 
             <div class="col-3">
-              <h6>Costo biglietto</h6>
+              <h6 class="mb-4">Costo biglietto</h6>
               <p id="costo-biglietto"></p>
             </div>
 
